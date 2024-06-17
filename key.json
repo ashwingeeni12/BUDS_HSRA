@@ -1,3 +1,7 @@
+/* 
+   don't share, this is personal API key. 
+   also dont run code for text to spech and speech to text often as I have x amount of itme and characters
+*/
 {
   "type": "service_account",
   "project_id": "hsrabuds",
