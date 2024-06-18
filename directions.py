@@ -23,8 +23,9 @@ directions = map_client.directions(start, end, mode= mode)
 for route in directions:
  for leg in route['legs']:
    for step in leg['steps']:
-      #print(step['html_instructions'])
-     
+     #cleans up the output
+     #removes html portions
+    
      clean_instructions = re.sub('<[^<]+?>', '', html.unescape(step['html_instructions']))
      print(clean_instructions)
       
