@@ -2,6 +2,7 @@ import googlemaps
 from datetime import datetime
 import re
 import html
+import speech_text
 
 apiKey = "AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM"
 
@@ -9,8 +10,8 @@ apiKey = "AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM"
 map_client = googlemaps.Client(apiKey)
 
 #Takes start and end locations from user
-start = input("Enter your start location: ")
-end = input("Enter your end location: ")
+start = speech_text.origin
+end = speech_text.destination
 
 #walking or driving directions
 mode = input("Enter your mode of transportation: ")
