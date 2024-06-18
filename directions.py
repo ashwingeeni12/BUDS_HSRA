@@ -26,8 +26,11 @@ for route in directions:
    for step in leg['steps']:
      #cleans up the output
      #removes html portions
+
+     print("")
     
      clean_instructions = re.sub('<[^<]+?>', '', html.unescape(step['html_instructions']))
      print(clean_instructions)
-      
+
+     print("")
 
