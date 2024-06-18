@@ -18,8 +18,6 @@ mode = input("Enter your mode of transportation: ")
 #This requests the directions
 directions = map_client.directions(start, end, mode= mode)
 
-url = "https://maps.googleapis.com/maps/api/directions/json?origin=New+York+City&destination=Washington,+DC&key=AIzaSyBP"
-
 
 # Prints out the directions
 for route in directions:
