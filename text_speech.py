@@ -2,12 +2,11 @@ import os
 import directions
 from google.cloud import texttospeech
 
-
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 client = texttospeech.TextToSpeechClient()
 
 # text is where the google maps direction will go
-raw_text = "Walk 2 minutes to the Austin History Center Station. Board the bus. Get off at the UT West Mall Station."
+raw_text = directions.direction
 
 synthesis_input = texttospeech.SynthesisInput(text=raw_text)
 
