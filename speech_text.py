@@ -4,6 +4,7 @@ from google.cloud import speech
 client = speech.SpeechClient.from_service_account_file('key.json')
 
 #sets file name
+#if user say directions in this format "Give me directions to _____" or "Give me directions from _____ to _______"
 file_name = "test.mp3"
 
 #reads in the mp3 data
