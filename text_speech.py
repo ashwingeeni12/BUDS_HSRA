@@ -1,5 +1,7 @@
 import os
+import directions
 from google.cloud import texttospeech
+
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 client = texttospeech.TextToSpeechClient()
