@@ -1,6 +1,7 @@
 import os
-import directions
 from google.cloud import texttospeech
+from pydub import AudioSegment
+from pydub.playback import play
 
 def tts(direction):
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
@@ -29,5 +30,8 @@ def tts(direction):
         audio_config = audio_config
     )
 
-    with open("speech.mp3", "wb") as i:
+    with open("direction.mp3", "wb") as i:
         i.write(response.audio_content)
+    
+    direction_audio = AudioSegment.from_mp3("direction.mp3") 
+    play(direction_audio)

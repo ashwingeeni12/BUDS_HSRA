@@ -1,0 +1,13 @@
+GPS Coding: 
+
+real_d.py is the main file where every thing else gets run from, so figure out how to run real_d.py when switch gets turrned on as
+then it will force the process to start, but when switch gets flipped off it cannot stop running.
+
+When switch gets flipped back to off we need recording.py to stop recording, so replace KeyboardInterrupt with the appropriate code 
+for that. 
+
+For the GPS system I think my code is correct, but on line 7 it says pi port which needs to be replaced with the appropriate port so 
+figure out the name of the port
+
+
+ 
