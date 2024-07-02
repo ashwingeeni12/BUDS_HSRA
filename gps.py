@@ -3,13 +3,8 @@ import serial
 def location():
     location = []
 
-    #port name might be serial num
-    #serial num: X000VXN2QV
-
-    portName = "X000VXN2QV"
-    
     while True:
-        gps = serial.Serial(portName, 9600)
+        gps = serial.Serial("pi port", 9600)
         gps_raw_data = gps.readline()
         gps_data = gps_raw_data.decode("utf-8")
         gps_list = gps_data.split(",")
