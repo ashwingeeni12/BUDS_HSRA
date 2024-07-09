@@ -3,6 +3,10 @@ import wave, struct
 from pydub import AudioSegment
 
 #Beginning Code to figure out  what mics 
+from pvrecorder import PvRecorder
+
+for index, device in enumerate(PvRecorder.get_audio_devices()):
+    print(f"[{index}] {device}")
 
 def audio():
     recorder = PvRecorder(device_index=0, frame_length=512) #(32 milliseconds of 16 kHz audio)
