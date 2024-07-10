@@ -2,7 +2,7 @@
    don't share, this is personal API key. 
    also dont run code for text to spech and speech to text often as I have x amount of itme and characters
 
-   api_key = AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM
+   api_key = AIzaSyDiHIdqzDs2RGVn1dLmuMNHf0r7j8XPxxc
 */
 {
   "type": "service_account",
