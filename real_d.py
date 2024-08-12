@@ -22,7 +22,7 @@ def get_current_location():
 
 sites = stt() #replace with actual file when we find out how to do that on pi's 
 
-apiKey = "AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM"
+apiKey = "your api key"
 map_client = googlemaps.Client(apiKey)
 
 # Takes start and end locations from user
