@@ -1,0 +1,1 @@
+HSRA Project, created a navigation device for the visually impaired through ultrasonic distance sensors and haptics along with GPS functionality. If you see a leaked API key in here it is already disabled.
