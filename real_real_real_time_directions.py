@@ -6,7 +6,7 @@ from geopy.distance import geodesic
 import time
 
 
-apiKey = "AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM"
+apiKey = ""
 map_client = googlemaps.Client(apiKey)
 
 # Takes start and end locations from user
