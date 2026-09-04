@@ -4,7 +4,7 @@ import re
 import html
 import speech_text
 
-apiKey = "AIzaSyBP0A4jy_5ydtdGR0qtQ14glSJkF4Jw9IM"
+apiKey = ""
 
 # Use API key here
 map_client = googlemaps.Client(apiKey)
